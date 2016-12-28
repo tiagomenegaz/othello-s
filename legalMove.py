@@ -21,14 +21,14 @@ def legalDirection(r, c, b, p, u, v):
             if b[r][c] > 0: #Before, I did b[r][c]>p
                 legalDir = True
             elif b[r][c] == 0 :
-                legalDir = False    
-                break    
+                legalDir = False
+                break
             else:
                 legalInv = True
                 break
         r += u
         c += v
-        
+
     if times < 2:
         return False
     return legalDir and legalInv

@@ -1,7 +1,7 @@
 ## 2nd Assignment
 
 #Question 1
-#def initialiseBoard(n): 
+#def initialiseBoard(n):
 #initialiseBoard(n) returns the initial board for an Othello game of size n.
 
 def initialiseBoard(n):
@@ -15,5 +15,3 @@ def initialiseBoard(n):
     zeros[pos2][pos] = -1
     zeros[pos2][pos2] = 1
     return zeros
-        
-    

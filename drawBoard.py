@@ -23,25 +23,25 @@ def drawQuare(t):
     t.end_fill()
     t.up
 
-def drawFrames(t,lines):      
+def drawFrames(t,lines):
     t.down()
 
-    for i in range(lines):        
+    for i in range(lines):
         t.forward(scale)
         x = t.xcor()
-        y = t.ycor()        
-        t.goto(x,y+dim) 
-        y = t.ycor() 
+        y = t.ycor()
+        t.goto(x,y+dim)
+        y = t.ycor()
         t.goto(x,y-dim)
 
-    t.left(90)   
+    t.left(90)
 
-    for i in range(lines):        
+    for i in range(lines):
         t.forward(scale)
         x = t.xcor()
-        y = t.ycor()        
-        t.goto(x-dim,y) 
-        x = t.xcor() 
+        y = t.ycor()
+        t.goto(x-dim,y)
+        x = t.xcor()
         t.goto(x+dim,y)
 
     t.up()
@@ -59,7 +59,7 @@ def drawCircle(t,player):
     t.begin_fill()
     t.circle((scale)*0.40)
     t.end_fill()
-    t.up()    
+    t.up()
 
 def calcMovement(t,x,y):
     x = t.xcor() + x*scale + 0.5*scale
@@ -79,18 +79,17 @@ def drawValues(t,b):
             elif (b[y][x] < 0):
                 calcMovement(t,x,y)
                 drawCircle(t,-1)
-            t.goto(xOri,yOri)    
+            t.goto(xOri,yOri)
 
     t.up()
-    
+
 def drawBoard(b):
     global scale
-    global dim    
+    global dim
     scale = 100
     dim   = scale * len(b)
-    
+
     t = startTurtle()
     drawQuare(t)
     drawFrames(t,len(b))
     drawValues(t,b)
-    
