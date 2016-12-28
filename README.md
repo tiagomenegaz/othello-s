@@ -1,6 +1,6 @@
 # Othello Game - AKA Reversi
 
-![alt tag](https://raw.githubusercontent.com/tmmgarcia/frac-turtle/master/img/result.png)
+![alt tag](https://raw.githubusercontent.com/tmmgarcia/othello-s/master/img/sample.png)
 
 
 This project consists in creating a [Othello - Reversi](https://en.wikipedia.org/wiki/Sierpinski_triangle) game using Turtle module. Based on user's input, the program makes plays with you the [Othello - Reversi](https://en.wikipedia.org/wiki/Reversi). This is an exercise developed during [CITS1401](https://uims.research.uwa.edu.au/Units/ViewContent.aspx?ID=54293) in 2014.
